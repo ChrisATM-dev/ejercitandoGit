@@ -11,3 +11,15 @@ def fizzbuzz(n):
             print("Buzz")
         else:
             print(i)
+
+def printSphereASCII(radius):
+    """
+    Print a sphere in ASCII art with the given radius.
+    """
+    for y in range(-radius, radius + 1):
+        for x in range(-radius, radius + 1):
+            if x**2 + y**2 <= radius**2:
+                print("o", end="")
+            else:
+                print(" ", end="")
+        print()
