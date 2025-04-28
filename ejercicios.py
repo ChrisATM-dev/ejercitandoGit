@@ -23,3 +23,18 @@ def printSphereASCII(radius):
             else:
                 print(" ", end="")
         print()
+
+
+def printCubeASCII(size):
+    """
+    Print a cube in ASCII art with the given size.
+    """
+    for z in range(size):
+        for y in range(size):
+            for x in range(size):
+                if x == 0 or x == size - 1 or y == 0 or y == size - 1 or z == 0 or z == size - 1:
+                    print("o", end="")
+                else:
+                    print(" ", end="")
+            print()
+        print()
